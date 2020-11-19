@@ -1,0 +1,380 @@
+@import "./varibatles";
+@import "./base";
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: #282828;
+  .conteiner {
+    display: flex;
+    justify-content: space-between;
+  }
+  .top {
+    width: 100%;
+    background-color: #282828 !important;
+
+    .conteiner {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__nav {
+      &__item {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        color: $white;
+        opacity: 0.5;
+        margin-right: 25px;
+        &:hover {
+          opacity: 1;
+          transition: 0.2s;
+        }
+      }
+    }
+    &__language {
+      &__item {
+        font-family: Raleway;
+        opacity: 0.5;
+        font-weight: 600;
+        font-size: 12px;
+        color: $white;
+        text-transform: lowercase;
+        margin-left: 15px;
+        &:hover {
+          opacity: 1;
+          transition: 0.2s;
+        }
+      }
+    }
+  }
+
+  &__logo {
+    padding-top: 15px;
+  }
+  &__nav {
+    display: flex;
+    align-items: start;
+    padding-top: 25px;
+    &__link {
+      display: inline-block;
+      text-decoration: none;
+      font-family: Raleway;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+      position: relative;
+      color: rgba(255, 255, 255, 0.6);
+      margin-left: 30px;
+      padding-bottom: 25px;
+      border: 3px solid transparent;
+      // margin-right: 30px;
+      &:hover + .dropdown {
+        display: block;
+      }
+
+      &:hover {
+        color: #faa61a;
+        border-bottom: 3px solid #faa61a;
+      }
+      &:hover::after {
+        border-top: 5px solid#faa61a;
+      }
+      &::after {
+        margin-left: 5px;
+        content: "";
+        position: relative;
+        top: 12px;
+
+        border: 5px solid transparent;
+        border-top: 5px solid rgba(255, 255, 255, 0.6);
+      }
+      &:nth-last-child(1) {
+        &::after {
+          display: none;
+        }
+      }
+      &:nth-child(-n + 2) {
+        margin-left: 35px;
+        padding-bottom: 7.3px;
+        &::after {
+          position: absolute;
+          right: -15px;
+          top: 7.5px;
+        }
+      }
+    }
+  }
+}
+
+.dropdown {
+  width: 100%;
+  background: #282828;
+  padding: 55px 0 80px 0;
+  position: absolute;
+  top: 98px;
+
+  display: none;
+  &__first {
+    position: relative;
+    left: 0px;
+
+    display: none;
+    &.active {
+      display: flex;
+    }
+    &__section {
+      margin-right: 100px;
+      display: flex;
+      flex-direction: column;
+      &__title {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+
+        color: $white;
+        margin-bottom: 20px;
+        transition: ease-in 0.3s;
+        &:hover {
+          color: $yellow;
+          transition: ease-in 0.3s;
+        }
+      }
+      &__link {
+        margin-bottom: 10px;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+
+        color: $white;
+        transition: ease-in 0.2s;
+        &:hover {
+          color: $yellow;
+          transition: ease-in 0.2s;
+        }
+      }
+    }
+  }
+  &__second {
+    position: relative;
+    left: 0px;
+
+    display: none;
+    &.active {
+      display: flex;
+    }
+    &__section {
+      margin-right: 100px;
+      display: flex;
+      flex-direction: column;
+      &__title {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+
+        color: $white;
+        margin-bottom: 20px;
+        transition: ease-in 0.2s;
+        &:hover {
+          color: $yellow;
+          transition: ease-in 0.2s;
+        }
+      }
+      &__link {
+        margin-bottom: 10px;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+
+        color: $white;
+        transition: ease-in 0.2s;
+        &:hover {
+          color: $yellow;
+          transition: ease-in 0.2s;
+        }
+      }
+    }
+  }
+  &__third {
+    position: relative;
+    left: 0px;
+    display: none;
+    &.active {
+      display: flex;
+    }
+    &__section {
+      margin-right: 100px;
+      display: flex;
+      flex-direction: column;
+      &__title {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+
+        color: $white;
+        margin-bottom: 20px;
+        transition: ease-in 0.2s;
+        &:hover {
+          color: $yellow;
+          transition: ease-in 0.2s;
+        }
+      }
+      &__link {
+        margin-bottom: 10px;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+
+        color: $white;
+        transition: ease-in 0.2s;
+        &:hover {
+          color: $yellow;
+          transition: ease-in 0.2s;
+        }
+      }
+    }
+  }
+  &__fourth {
+    position: relative;
+    left: 0px;
+
+    display: none;
+    &.active {
+      display: flex;
+    }
+    &__section {
+      margin-right: 100px;
+      display: flex;
+      flex-direction: column;
+      &__title {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+
+        color: $white;
+        margin-bottom: 20px;
+        transition: ease-in 0.2s;
+        &:hover {
+          color: $yellow;
+          transition: ease-in 0.2s;
+        }
+      }
+      &__link {
+        margin-bottom: 10px;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+
+        color: $white;
+        transition: ease-in 0.2s;
+        &:hover {
+          color: $yellow;
+          transition: ease-in 0.2s;
+        }
+      }
+    }
+  }
+  &__fifth {
+    position: relative;
+    left: 0px;
+    display: none;
+    &.active {
+      display: flex;
+    }
+    &__section {
+      margin-right: 100px;
+      display: flex;
+      flex-direction: column;
+      &__title {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+
+        color: $white;
+        margin-bottom: 20px;
+        transition: ease-in 0.2s;
+        &:hover {
+          color: $yellow;
+          transition: ease-in 0.2s;
+        }
+      }
+      &__link {
+        margin-bottom: 10px;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+
+        color: $white;
+        transition: ease-in 0.2s;
+        &:hover {
+          color: $yellow;
+          transition: ease-in 0.2s;
+        }
+      }
+    }
+  }
+  &__sixth {
+    position: relative;
+    left: 0px;
+    display: none;
+
+    &.active {
+      display: flex;
+    }
+    &__section {
+      margin-right: 100px;
+      display: flex;
+      flex-direction: column;
+      &__title {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+
+        color: $white;
+        margin-bottom: 20px;
+        transition: ease-in 0.2s;
+        &:hover {
+          color: $yellow;
+          transition: ease-in 0.2s;
+        }
+      }
+      &__link {
+        margin-bottom: 10px;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+
+        color: $white;
+        transition: ease-in 0.2s;
+        &:hover {
+          color: $yellow;
+          transition: ease-in 0.2s;
+        }
+      }
+    }
+  }
+  &:hover {
+    display: block;
+  }
+  &.active {
+    display: block;
+  }
+}

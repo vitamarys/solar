@@ -1,0 +1,140 @@
+@import "./varibatles";
+.general {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  .conteiner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__down {
+    position: absolute;
+    display: block;
+    margin-top: 120px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: arrowDown 1s infinite;
+  }
+}
+@keyframes arrowDown {
+  0% {
+    top: 70%;
+  }
+  50% {
+    top: 72%;
+  }
+  100% {
+    top: 70%;
+  }
+}
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.general__social {
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: -240px;
+  &__item {
+    margin-right: 30px;
+    & > img {
+      filter: brightness(0.4);
+      &:hover {
+        transition: 0.3s ease-in;
+        filter: brightness(1);
+      }
+    }
+  }
+}
+.general__content {
+  display: flex;
+  flex-direction: column;
+  max-width: 630px;
+  height: 100%;
+
+  &__title {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 85px;
+    color: #ffffff;
+  }
+  &__sub {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+
+    color: #ffffff;
+  }
+  &__btn {
+    display: flex;
+    margin-top: 50px;
+    &__add {
+      position: relative;
+      font-family: Raleway;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      text-decoration: none;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 30px;
+      border: 2px solid #faa61a;
+      border-radius: 3px;
+      max-width: 240px;
+      text-transform: uppercase;
+      margin-right: 30px;
+      &:before {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 100%;
+        background: #faa61a;
+        border-radius: 1px;
+        transition: all 0.6s ease;
+      }
+      &:hover:before {
+        width: 100%;
+        z-index: -1;
+      }
+    }
+    &__video {
+      position: relative;
+      font-family: Raleway;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      text-decoration: none;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+
+      min-width: 170px;
+      text-transform: uppercase;
+      &:hover {
+        color: red;
+        transition: 0.3s;
+      }
+      &::after {
+        content: url(../img/Subtract.png);
+        margin-left: 10px;
+        position: relative;
+        top: 2px;
+      }
+    }
+  }
+}
