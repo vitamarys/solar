@@ -164,7 +164,7 @@ select {
 }
 .header .top {
   width: 100%;
-  background-color: #282828 !important;
+  background-color: #202020 !important;
 }
 .header .top .conteiner {
   display: flex;
@@ -195,6 +195,9 @@ select {
 .header .top__language__item:hover {
   opacity: 1;
   transition: 0.2s;
+}
+.header .top__language__item.active {
+  opacity: 1;
 }
 .header__logo {
   padding-top: 15px;

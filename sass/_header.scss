@@ -16,7 +16,7 @@
   }
   .top {
     width: 100%;
-    background-color: #282828 !important;
+    background-color: #202020 !important;
 
     .conteiner {
       display: flex;
@@ -49,6 +49,9 @@
         &:hover {
           opacity: 1;
           transition: 0.2s;
+        }
+        &.active{
+          opacity: 1;
         }
       }
     }
