@@ -1991,6 +1991,10 @@ select {
   margin-bottom: 50px;
 }
 
+.time:hover {
+  color: #ffff;
+}
+
 .bot-section {
   width: 100%;
   padding: 3px 0;
