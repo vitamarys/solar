@@ -1000,9 +1000,12 @@ select {
   width: 0px;
   height: 1px;
   top: 10px;
-  right: 0;
+  right: -7px;
   transform: translateX(100%);
   background: #4d4d4d;
+}
+.tabs__item:nth-child(1).active {
+  left: 0;
 }
 .tabs__item:hover {
   opacity: 0.7;
@@ -1990,10 +1993,13 @@ select {
 
 .bot-section {
   width: 100%;
+  padding: 10px 0;
+  background-color: #202020;
+}
+.bot-section > .conteiner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
 }
 .bot-section__title {
   font-family: Raleway;

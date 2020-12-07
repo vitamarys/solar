@@ -182,11 +182,13 @@
 }
 .bot-section {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 10px 0;
-
+  background-color: #202020;
+  & > .conteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   &__title {
     font-family: Raleway;
     font-style: normal;
