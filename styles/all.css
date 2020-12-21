@@ -765,7 +765,7 @@ select {
   color: #4d4d4d;
 }
 .about_concent__block__description__bold {
-  font-weight: 700;
+  font-weight: 600;
 }
 .about_concent__block__btn {
   position: relative;
@@ -982,7 +982,7 @@ select {
   cursor: pointer;
   font-family: Raleway;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 15px;
   text-transform: uppercase;
   left: 0;
@@ -1091,7 +1091,7 @@ select {
 .tab-block__item__hover__text {
   font-family: Raleway;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 16px;
   line-height: 19px;
   font-weight: 500;
@@ -1104,7 +1104,7 @@ select {
   margin: 0px auto;
   font-family: Raleway;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 15px;
   line-height: 18px;
   display: flex;
@@ -1729,7 +1729,7 @@ select {
 .contact__block__form__item__name {
   font-family: Raleway;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 14px;
   line-height: 30px;
   color: #4d4d4d;
@@ -1783,7 +1783,7 @@ select {
 .contact__block__form__private__text {
   font-family: Raleway;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 14px;
   line-height: 30px;
   color: #4d4d4d;
