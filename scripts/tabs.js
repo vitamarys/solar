@@ -8,10 +8,21 @@ $(".tab-trigger").click(function(){
     
     $('.tab-content.active').removeClass('active'); 
     content.addClass('active');
-    console.log($('.underline'))
-//    if($(first).hasClass('active')){
-//     $('.underline').css("left","500px")
-//    }
+   
+
+    
+})
+$(".triger-tab").click(function(){
+   
+    var id = $(this).attr("data-tab"),
+    content = $('.energie-tab-content[data-tab="'+ id +'"]');
+    $('.triger-tab.active').removeClass('active'); 
+    $(this).addClass('active'); 
+    
+    $('.energie-tab-content.active').removeClass('active'); 
+    content.addClass('active');
+   
+
     
 })
 
