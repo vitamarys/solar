@@ -37,7 +37,6 @@ a {
   text-decoration: none;
 }
 
-/* Выставляем основные настройки по-умолчанию для body */
 body {
   overflow-x: hidden;
   min-height: 100vh;
@@ -113,7 +112,6 @@ a {
   text-decoration: none;
 }
 
-/* Выставляем основные настройки по-умолчанию для body */
 body {
   overflow-x: hidden;
   min-height: 100vh;
@@ -1862,6 +1860,17 @@ select {
 .contact__block .est:hover {
   animation: pointer-est 1s ease;
 }
+.contact__block__country {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #4d4d4d;
+}
 
 @keyframes pointer-ua {
   0% {
@@ -2146,6 +2155,184 @@ select {
 .bot-section__apelsun__item > img:hover {
   transition: 0.3s ease-in;
   filter: grayscale(0);
+}
+
+.all-news {
+  padding-top: 110px;
+  position: relative;
+}
+.all-news__vertical {
+  position: absolute;
+  top: 450px;
+  right: -286px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 130px;
+  color: transparent;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.5;
+  -webkit-text-stroke: 1px #9ba7be;
+  transform: rotate(-90deg);
+}
+
+.breadcrumbs__list {
+  display: flex;
+}
+.breadcrumbs__list__item {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  color: #828282;
+  margin-right: 25px;
+}
+.breadcrumbs__list__item:hover {
+  text-decoration: underline;
+}
+
+.all-news-tittle {
+  margin-top: 40px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  color: #4d4d4d;
+}
+
+.all-news-descr {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  color: #828282;
+  width: 400px;
+  margin-top: 30px;
+}
+
+.all-news-block {
+  margin-top: 70px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.all-news-block__pages {
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+.all-news-block__pages__list {
+  display: flex;
+  align-items: center;
+}
+.all-news-block__pages__list__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  color: #4d4d4d;
+  margin-right: 10px;
+}
+.all-news-block__pages__list .page {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #EFEFEF;
+  border-radius: 4px;
+}
+.all-news-block__pages__list .page.active {
+  border: 2px solid #faa61a;
+}
+.all-news-block__pages__list .page:hover {
+  border: 2px solid #faa61a;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+.all-news-block__item {
+  width: calc(25% - 30px);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  filter: grayscale(100%);
+  transition: ease-in 0.3s;
+}
+.all-news-block__item:nth-child(4n) {
+  margin-right: 0;
+}
+.all-news-block__item:hover {
+  filter: grayscale(0%);
+  transition: ease-in 0.3s;
+}
+.all-news-block__item:hover .all-news-block__item__date__link {
+  opacity: 1;
+  visibility: visible;
+  transition: ease-in 0.3s;
+}
+.all-news-block__item__img {
+  height: 287px;
+}
+.all-news-block__item__img > img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+.all-news-block__item__title {
+  margin: 33px 0 18px 0;
+}
+.all-news-block__item__title__text {
+  cursor: default;
+  transition: ease-in 0.3s;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  color: #4F4F4F;
+}
+.all-news-block__item__description {
+  margin-bottom: 30px;
+}
+.all-news-block__item__description__text {
+  cursor: default;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: #4F4F4F;
+  opacity: 0.7;
+}
+.all-news-block__item__date {
+  display: flex;
+  justify-content: space-between;
+}
+.all-news-block__item__date__text {
+  cursor: default;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #4F4F4F;
+  opacity: 0.7;
+}
+.all-news-block__item__date__link {
+  transition: ease-in 0.3s;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  opacity: 0;
+  visibility: hidden;
+  position: relative;
+  top: -4px;
+  text-decoration-line: underline;
+  color: #faa61a;
 }
 
 /*# sourceMappingURL=all.css.map */
