@@ -2468,6 +2468,10 @@ select {
   display: flex;
   width: 50%;
 }
+.equipment-baner__item__img:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
 .equipment-baner__item:nth-last-child(1) {
   justify-content: flex-end;
   border-left: 1px solid #E0E0E0;

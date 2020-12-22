@@ -139,6 +139,13 @@ margin-bottom: 100px;
     &__item{
         display: flex;
         width: 50%;
+       
+        &__img{
+            &:hover{
+                transform: scale(1.1);
+                transition: 0.2s;
+            }
+        }
        &:nth-last-child(1){
         justify-content: flex-end;
         border-left: 1px solid #E0E0E0; ;
