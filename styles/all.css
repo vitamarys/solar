@@ -1704,16 +1704,25 @@ select {
 }
 .contact .conteiner {
   display: flex;
+  background-size: cover;
 }
 
 .contact__block {
   width: 50%;
+  position: relative;
 }
 .contact__block:nth-last-child(1) {
-  padding-top: 50px;
+  position: relative;
+}
+.contact__block__title {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  color: #4D4D4D;
 }
 .contact__block__form {
-  margin-top: 127px;
+  margin-top: 72px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -1808,7 +1817,118 @@ select {
 .contact__block__form__private__obligatory > .star {
   font-size: 25px;
 }
+.contact__block__pointer {
+  position: absolute;
+}
+.contact__block .ua {
+  top: 330px;
+  left: 319px;
+}
+.contact__block .ua:hover {
+  animation: pointer-ua 1s ease;
+}
+.contact__block .mol {
+  top: 366px;
+  left: 285px;
+}
+.contact__block .mol:hover {
+  animation: pointer-mol 1s ease;
+}
+.contact__block .ger {
+  top: 410px;
+  left: 459px;
+}
+.contact__block .ger:hover {
+  animation: pointer-ger 1s ease;
+}
+.contact__block .lt {
+  top: 251px;
+  left: 210px;
+}
+.contact__block .lt:hover {
+  animation: pointer-lt 1s ease;
+}
+.contact__block .lat {
+  top: 247px;
+  left: 263px;
+}
+.contact__block .lat:hover {
+  animation: pointer-lat 1s ease;
+}
+.contact__block .est {
+  top: 202px;
+  left: 239px;
+}
+.contact__block .est:hover {
+  animation: pointer-est 1s ease;
+}
 
+@keyframes pointer-ua {
+  0% {
+    top: 330px;
+  }
+  50% {
+    top: 310px;
+  }
+  100% {
+    top: 330px;
+  }
+}
+@keyframes pointer-mol {
+  0% {
+    top: 366px;
+  }
+  50% {
+    top: 346px;
+  }
+  100% {
+    top: 366px;
+  }
+}
+@keyframes pointer-ger {
+  0% {
+    top: 410px;
+  }
+  50% {
+    top: 390px;
+  }
+  100% {
+    top: 410px;
+  }
+}
+@keyframes pointer-lt {
+  0% {
+    top: 251px;
+  }
+  50% {
+    top: 231px;
+  }
+  100% {
+    top: 251px;
+  }
+}
+@keyframes pointer-lat {
+  0% {
+    top: 247px;
+  }
+  50% {
+    top: 227px;
+  }
+  100% {
+    top: 247px;
+  }
+}
+@keyframes pointer-est {
+  0% {
+    top: 202px;
+  }
+  50% {
+    top: 182px;
+  }
+  100% {
+    top: 202px;
+  }
+}
 .message {
   width: 100%;
   margin-top: 60px;
