@@ -2256,7 +2256,7 @@ select {
 .all-news-block__item {
   width: calc(25% - 30px);
   margin-right: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   filter: grayscale(100%);
   transition: ease-in 0.3s;
 }
@@ -2281,7 +2281,7 @@ select {
   object-position: center center;
 }
 .all-news-block__item__title {
-  margin: 33px 0 18px 0;
+  margin: 18px 0 18px 0;
 }
 .all-news-block__item__title__text {
   cursor: default;
@@ -2290,6 +2290,7 @@ select {
   font-style: normal;
   font-weight: 600;
   font-size: 22px;
+  margin: 0;
   color: #4F4F4F;
 }
 .all-news-block__item__description {
