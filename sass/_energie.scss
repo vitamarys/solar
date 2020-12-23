@@ -1,113 +1,233 @@
-.energie{
-    padding-top:110px ;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding-bottom: 240px;
-
+.energie {
+  padding-top: 110px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 240px;
 }
-.energie-title{
-font-family: Raleway;
-font-style: normal;
-font-weight: 500;
-font-size: 48px;
-line-height: 56px;
-width: 600px;
-color: #FFFFFF;
-margin-top: 130px;
-
+.energie-title {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  width: 600px;
+  color: #ffffff;
+  margin-top: 130px;
 }
-.energie-descr{
-    width: 100%;
-    display: flex;
-    &__item{
-        width: 70%;
-        padding-right: 50px;
-        
-        &__logo{
-            margin-top: 100px;
-            margin-bottom: 100px;
-        }
-        &__paragraf{
+.energie-descr {
+  width: 100%;
+  display: flex;
+  &__item {
+    width: 70%;
+    padding-right: 50px;
+
+    &__logo {
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+    &__paragraf {
+      font-family: Raleway;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 30px;
+      color: $gray;
+      margin-bottom: 30px;
+    }
+  }
+  .news-bar {
+    width: 30%;
+    background: #fbfbfb;
+    position: relative;
+    padding: 60px 0px 40px 70px;
+    &__title {
+      font-family: Raleway;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 26px;
+      color: $darkgray;
+      padding-bottom: 30px;
+      // border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    &__item {
+      display: flex;
+      flex-direction: column;
+      padding: 20px 0;
+      border-top: 1px solid rgba(0, 0, 0, 0.2);
+      &__title {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 26px;
+        color: $darkgray;
+        margin-bottom: 20px;
+      }
+      &__descr {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 30px;
+        opacity: 0.7;
+        color: $darkgray;
+        margin-bottom: 15px;
+      }
+      &__date {
         font-family: Raleway;
         font-style: normal;
         font-weight: 300;
-        font-size: 16px;
-        line-height: 30px;
-        color: $gray;
-        margin-bottom: 30px;    
-        }
+        font-size: 14px;
+        font-feature-settings: "pnum" on, "lnum" on;
+        color: $darkgray;
+      }
     }
-    .news{
-        width: 30%;
-        background: #FBFBFB;
-    }
-
-}
-.energie-tabs-items{
-    display: flex;
-    
-    
-}
-.energie-tabs-item{
-    display: block;
-    position: relative;
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 22px;
-    opacity: 0.4;
-    color: $gray;
-    cursor: pointer;
-    margin-right: 55px;
-    text-transform: uppercase;
-    transition: all 0.6s;
-    &::before {
+    &__link {
+      z-index: 2;
+      padding: 22px 47px;
+      font-family: Raleway;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      color: $gray;
+      text-transform: uppercase;
+      display: block;
+      max-width: 200px;
+      border: 2px solid $yellow;
+      border-radius: 4px;
+      margin-top: 45px;
+      position: relative;
+      &:before {
+        z-index: -1;
         content: "";
-        opacity: 0;
-        transition: all 0.6s;
         position: absolute;
-        display: block;
-        width: 0px;
-        height: 1px;
-        top: 15px;
-        right: -7px;
-        transform: translateX(100%);
-        background: $yellow;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 100%;
+        background: #faa61a;
+        border-radius: 1px;
+        transition: all 0.6s ease;
       }
-      &:nth-child(1) {
-        &.active {
-          left: 0;
-          margin-right: 110px ;          
-        }
+      &:hover:before {
+        width: 100%;
+        z-index: -1;
       }
-      &:hover {
-        opacity: 0.7;
-      }
-      &.active {
-        color: $yellow;
-        opacity: 1;
-        margin-right: 110px ;
-        transition: all 0.6s;
-        
-    
-        &::before {
-          content: "";
-          transition: all 0.6s;
-          opacity: 1;
-          width: 49px;
-        }
-      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -1489px;
+      background-color: #fbfbfb;
+      width: 400%;
+      height: 100%;
+    }
+  }
+}
+.energie-tabs-items {
+  display: flex;
+}
+// .gray {
+//   &::before {
+//     content: "asdsad";
+//   }
+// }
+.energie-tabs-item {
+  display: block;
+  position: relative;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  opacity: 0.4;
+  color: $gray;
+  cursor: pointer;
+  margin-right: 55px;
+  text-transform: uppercase;
+  transition: all 0.6s;
+  &::before {
+    content: "";
+    opacity: 0;
+    transition: all 0.6s;
+    position: absolute;
+    display: block;
+    width: 0px;
+    height: 1px;
+    top: 15px;
+    right: -7px;
+    transform: translateX(100%);
+    background: $yellow;
+  }
+  &:nth-child(1) {
+    &.active {
+      left: 0;
+      margin-right: 110px;
+    }
+  }
+  &:hover {
+    opacity: 0.7;
+  }
+  &.active {
+    color: $yellow;
+    opacity: 1;
+    margin-right: 110px;
+    transition: all 0.6s;
+
+    &::before {
+      content: "";
+      transition: all 0.6s;
+      opacity: 1;
+      width: 49px;
+    }
+  }
 }
 .energie-tab-body {
-    width: 100%;
-    margin-bottom: 40px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.energie-tab-block {
+  width: 100%;
+  display: none;
+  min-height: 500px;
+
+  flex-direction: column;
+  &.active {
+    display: flex;
   }
-  .energie-tab-block {
-    width: 100%;
-    display: none;
-    flex-wrap: wrap;
-    &.active {
-      display: flex;
+  &__title {
+    margin-top: 80px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    color: $gray;
+  }
+  &__descr {
+    font-family: Raleway;
+    font-style: normal;
+    font-size: 16px;
+    margin-top: 25px;
+  }
+  &__download {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 20px;
+    color: #485e88;
+    &:hover {
+      text-decoration-line: underline;
     }
+  }
+  &__baner {
+    display: flex;
+    &__item {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 }

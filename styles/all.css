@@ -2492,7 +2492,7 @@ select {
   font-size: 48px;
   line-height: 56px;
   width: 600px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-top: 130px;
 }
 
@@ -2517,9 +2517,93 @@ select {
   color: #4d4d4d;
   margin-bottom: 30px;
 }
-.energie-descr .news {
+.energie-descr .news-bar {
   width: 30%;
-  background: #FBFBFB;
+  background: #fbfbfb;
+  position: relative;
+  padding: 60px 0px 40px 70px;
+}
+.energie-descr .news-bar__title {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  color: #4F4F4F;
+  padding-bottom: 30px;
+}
+.energie-descr .news-bar__item {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.energie-descr .news-bar__item__title {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+  color: #4F4F4F;
+  margin-bottom: 20px;
+}
+.energie-descr .news-bar__item__descr {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  opacity: 0.7;
+  color: #4F4F4F;
+  margin-bottom: 15px;
+}
+.energie-descr .news-bar__item__date {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #4F4F4F;
+}
+.energie-descr .news-bar__link {
+  z-index: 2;
+  padding: 22px 47px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  color: #4d4d4d;
+  text-transform: uppercase;
+  display: block;
+  max-width: 200px;
+  border: 2px solid #faa61a;
+  border-radius: 4px;
+  margin-top: 45px;
+  position: relative;
+}
+.energie-descr .news-bar__link:before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background: #faa61a;
+  border-radius: 1px;
+  transition: all 0.6s ease;
+}
+.energie-descr .news-bar__link:hover:before {
+  width: 100%;
+  z-index: -1;
+}
+.energie-descr .news-bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -1489px;
+  background-color: #fbfbfb;
+  width: 400%;
+  height: 100%;
 }
 
 .energie-tabs-items {
@@ -2581,10 +2665,45 @@ select {
 .energie-tab-block {
   width: 100%;
   display: none;
-  flex-wrap: wrap;
+  min-height: 500px;
+  flex-direction: column;
 }
 .energie-tab-block.active {
   display: flex;
+}
+.energie-tab-block__title {
+  margin-top: 80px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  color: #4d4d4d;
+}
+.energie-tab-block__descr {
+  font-family: Raleway;
+  font-style: normal;
+  font-size: 16px;
+  margin-top: 25px;
+}
+.energie-tab-block__download {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  margin-top: 20px;
+  color: #485e88;
+}
+.energie-tab-block__download:hover {
+  text-decoration-line: underline;
+}
+.energie-tab-block__baner {
+  display: flex;
+}
+.energie-tab-block__baner__item {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=all.css.map */
