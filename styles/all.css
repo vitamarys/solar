@@ -38,11 +38,11 @@ a {
 }
 
 body {
-  overflow-x: hidden;
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
@@ -113,11 +113,11 @@ a {
 }
 
 body {
-  overflow-x: hidden;
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
@@ -2483,6 +2483,7 @@ select {
   background-position: center;
   background-repeat: no-repeat;
   padding-bottom: 240px;
+  width: 100%;
 }
 
 .energie-title {
@@ -2704,6 +2705,185 @@ select {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.private {
+  padding-top: 110px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-bottom: 240px;
+  width: 100%;
+}
+
+.private-title {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  width: 600px;
+  color: #ffffff;
+  margin-top: 130px;
+}
+
+.private-descr {
+  width: 100%;
+  display: flex;
+}
+.private-descr__item {
+  width: 70%;
+  padding-right: 50px;
+  padding-top: 60px;
+}
+.private-descr__item__descr {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  color: #4d4d4d;
+  margin-bottom: 20px;
+}
+
+.slider-private-for {
+  display: flex;
+  position: relative;
+}
+.slider-private-for__item__img {
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+}
+.slider-private-for .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  opacity: 0.6;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.slider-private-for .slick-prev {
+  left: 30px;
+}
+.slider-private-for .slick-next {
+  right: 30px;
+  transform: translateY(-50%), rotate(180deg);
+}
+
+.slider-private-nav {
+  margin-bottom: 70px;
+  margin-top: 30px;
+  display: flex;
+  position: relative;
+}
+.slider-private-nav .slick-list {
+  overflow: visible;
+  width: max-content;
+}
+.slider-private-nav .slick-track {
+  display: flex;
+  width: max-content;
+  transform: translate3d(0px, 0px, 0px) !important;
+}
+.slider-private-nav__item__img {
+  object-fit: cover;
+  width: 80px;
+  height: 50px;
+  margin-right: 30px;
+}
+.slider-private-nav .slick-active {
+  outline: none;
+}
+.slider-private-nav .slick-current {
+  filter: grayscale(100%);
+}
+
+.news-bar {
+  width: 30%;
+  background: #fbfbfb;
+  position: relative;
+  padding: 60px 0px 40px 70px;
+}
+.news-bar__title {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  color: #4F4F4F;
+  padding-bottom: 30px;
+}
+.news-bar__item {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.news-bar__item__title {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+  color: #4F4F4F;
+  margin-bottom: 20px;
+}
+.news-bar__item__descr {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  opacity: 0.7;
+  color: #4F4F4F;
+  margin-bottom: 15px;
+}
+.news-bar__item__date {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #4F4F4F;
+}
+.news-bar__link {
+  z-index: 2;
+  padding: 22px 47px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  color: #4d4d4d;
+  text-transform: uppercase;
+  display: block;
+  max-width: 200px;
+  border: 2px solid #faa61a;
+  border-radius: 4px;
+  margin-top: 45px;
+  position: relative;
+}
+.news-bar__link:before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background: #faa61a;
+  border-radius: 1px;
+  transition: all 0.6s ease;
+}
+.news-bar__link:hover:before {
+  width: 100%;
+  z-index: -1;
+}
+.news-bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -1489px;
+  background-color: #fbfbfb;
+  width: 400%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=all.css.map */

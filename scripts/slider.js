@@ -21,4 +21,19 @@ $('.slider-sun-power-nav').slick({
     easing:'ease-in',
     autoplay: false,
 })
+$('.slider-private-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  // infinite: false,
+  arrows:true,
+  asNavFor: '.slider-private-nav'
+});
+$('.slider-private-nav').slick({
+  slidesToShow: 3,
+  asNavFor: '.slider-private-for',
+  focusOnSelect: true,
+  slidesToScroll: 1,
+  easing:'ease-in',
+  autoplay: false,
+})
 })
