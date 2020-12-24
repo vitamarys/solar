@@ -1,0 +1,22 @@
+.error404 {
+  min-height: 80vh;
+  width: 100%;
+  position: relative;
+  &__baner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &__text {
+      font-family: Raleway;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      color: $gray;
+      a {
+        text-decoration: underline;
+        color: $gray;
+      }
+    }
+  }
+}
