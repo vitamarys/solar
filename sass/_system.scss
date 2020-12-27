@@ -6,6 +6,9 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  @media (max-width: 1199px) {
+    padding: 40px 0 50px 0;
+  }
   &__title {
     position: absolute;
     top: 42%;
@@ -24,6 +27,9 @@
     opacity: 0.2;
     -webkit-text-stroke: 1px #ffffff;
     transform: rotate(90deg);
+    @media (max-width: 1199px) {
+      display: none;
+    }
   }
   .conteiner {
     display: flex;
@@ -32,8 +38,23 @@
 .system__block__text {
   width: 50%;
   margin-right: 120px;
+  @media (max-width: 1199px) {
+    margin-right: 0px;
+    padding-left: 85px;
+  }
+  @media (max-width: 575px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   &:nth-last-child(1) {
     padding-left: 360px;
+    @media (max-width: 1199px) {
+      padding-left: 85px;
+    }
+    @media (max-width: 575px) {
+      padding-left: 20px;
+      padding-right: 0px;
+    }
   }
   &__title {
     width: 350px;
@@ -46,6 +67,17 @@
     align-items: center;
     color: $white;
     margin-bottom: 50px;
+    @media (max-width: 1199px) {
+      font-size: 22px;
+      line-height: 26px;
+      width: 200px;
+      @media (max-width: 575px) {
+        font-size: 18px;
+        line-height: 24px;
+        width: 150px;
+        margin-bottom: 30px;
+      }
+    }
   }
   &__item {
     width: 310px;
@@ -58,10 +90,25 @@
     color: $white;
     margin-bottom: 20px;
     padding-left: 40px;
+    @media (max-width: 1199px) {
+      font-size: 11px;
+      line-height: 20px;
+      width: 220px;
+    }
+    @media (max-width: 575px) {
+      font-size: 10px;
+      line-height: 18px;
+      padding-left: 20px;
+      width: auto;
+    }
     &::before {
       content: url(../img/Vector.png);
       position: absolute;
       left: 0;
+      @media (max-width: 575px) {
+        content: url(../img/VectorM.png);
+        top: 3px;
+      }
     }
   }
   &__btn {
@@ -84,6 +131,11 @@
     padding: 20px 30px;
     width: 200px;
     background: transparent;
+    @media (max-width: 1199px) {
+      font-size: 12px;
+      padding: 15px 20px;
+      width: 125px;
+    }
     &::before {
       z-index: -1;
       content: "";

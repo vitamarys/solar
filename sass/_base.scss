@@ -61,6 +61,13 @@ select {
 .conteiner {
   width: 1242px;
   margin: 0 auto;
+  @media (max-width: 1199px) {
+    width: 730px;
+  }
+  @media (max-width: 575px) {
+    width: 100%;
+    padding: 0 10px;
+  }
 }
 .wrapper {
   width: 815px;
