@@ -40,6 +40,8 @@ linkParent.addEventListener('click', (event)=>{
         })
        
     }
+    
+
 })
 
 
@@ -52,7 +54,7 @@ function transformBtn(){
     
 };  
 
-burgerBtn.addEventListener('click',() =>{
+burgerBtn.addEventListener('click', () => {
     transformBtn();
     menuBody.classList.toggle('active');
     links.forEach(item=>{

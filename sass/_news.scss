@@ -37,7 +37,6 @@
   &__text {
     margin-right: 50px;
 
-    min-width: 384px;
     @media (max-width: 1199px) {
       display: flex;
       width: 70%;
@@ -50,7 +49,7 @@
     @media (max-width: 575px) {
       font-size: 10px;
       line-height: 18px;
-      width: 100%;
+      max-width: 100%;
       justify-content: flex-start;
     }
     &__title {

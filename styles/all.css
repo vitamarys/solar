@@ -2575,7 +2575,6 @@ body.no-scroll {
 }
 .news__content__text {
   margin-right: 50px;
-  min-width: 384px;
 }
 @media (max-width: 1199px) {
   .news__content__text {
@@ -2592,7 +2591,7 @@ body.no-scroll {
   .news__content__text {
     font-size: 10px;
     line-height: 18px;
-    width: 100%;
+    max-width: 100%;
     justify-content: flex-start;
   }
 }
